@@ -27,8 +27,8 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 			return (NULL);
 			/* it faile at task 0 to create */
 		}
-		if (parent->right == NULL )
-		{ 		
+		if (parent->right == NULL)
+		{
 			parent->right = new_node;
 			new_node->parent = parent;
 		}
@@ -37,7 +37,6 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 			new_node->right = parent->right;
 			parent->right->parent = new_node;
 			parent->right = new_node;
-			
-		}	
+		}
 		return (new_node);
 }
